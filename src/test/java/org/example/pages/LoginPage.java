@@ -26,6 +26,8 @@ public class LoginPage {
     @FindBy(xpath = "//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a")
     public WebElement loggedInAsText;
 
+    @FindBy(xpath = "//*[@id=\"form\"]/div/div/div[1]/div/form/p")
+    public WebElement errorMessage;
 
     public void loginOl(String email, String password) {
         headerLoginLink.click();

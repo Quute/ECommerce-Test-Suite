@@ -1,4 +1,5 @@
 package org.example.utilities;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,17 +20,17 @@ public class Driver {
 
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
+                    //WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
                 case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
+                    //WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
                 // İlerde Edge, Safari eklenebilir
                 default:
                     // Eğer yanlış bir şey yazılırsa default olarak Chrome açsın
-                    WebDriverManager.chromedriver().setup();
+                    //WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
             }
 
