@@ -29,7 +29,7 @@ public class LoginTest extends TestBase {
 
         Assert.assertTrue(loginPage.errorMessage.isDisplayed(), "Hata mesajı görüntülenmedi! Sistem yanlış girişe tepki vermiyor.");
 
-        // b) Mesajın içeriği doğru mu? (Bug yakalama kısmı burasıdır)
+        // b) Mesajın içeriği doğru mu?
         String actualMessage = loginPage.errorMessage.getText();
         String expectedMessage = "Your email or password is incorrect!";
         Assert.assertEquals(actualMessage, expectedMessage, "Hata mesajı metni yanlış!");
